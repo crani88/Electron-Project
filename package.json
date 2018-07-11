@@ -1,0 +1,17 @@
+{
+  "name": "electron",
+  "version": "0.1.0",
+  "description": "Game",
+  "main": "main.js",
+  "dependencies": {
+    "electron": "^2.0.4",
+    "pixi.js": "^4.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreas Hedbäck",
+  "license": "ISC"
+}
