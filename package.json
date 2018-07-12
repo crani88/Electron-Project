@@ -13,5 +13,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andreas Hedbäck",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "*.js",
+    "build",
+    "app",
+    "node_modules"
+  ]
 }
