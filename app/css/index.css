@@ -6,7 +6,7 @@ div.container {
 header, footer {
     padding: 1em;
     color: white;
-    background-color: rgb(228, 28, 28);
+    background-color: rgb(72, 72, 72);
     clear: left;
     text-align: center;
 }
@@ -15,21 +15,31 @@ nav {
     float: left;
     max-width: 160px;
     margin: 0;
-    padding: 1em;
+}
+
+nav img {
+    border: none;
+    width: 150px;
+    height: 150px;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
+    width: 160px;
+    background-color: #f1f1f1;
 }
-   
-nav ul a {
+
+nav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
 }
 
-article {
-    margin-left: 170px;
-    border-left: 1px solid gray;
-    padding: 1em;
-    overflow: hidden;
+/* Change the link color on hover */
+nav li a:hover {
+    background-color: #555;
+    color: white;
 }

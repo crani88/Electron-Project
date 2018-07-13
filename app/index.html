@@ -2,36 +2,27 @@
   <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">-->
     <link rel="stylesheet" type="text/css" href="./css/index.css"
   </head>
   <body>
-    <script type="text/javascript" src="../db/db.js"> console.log("hej");</script>
-    <!-- Här kan vi ladda in grejer innan allt annat startar! -->
-    <div class="container">
-    
+    <div class="container">    
     <header>
        <h1>Medieval!</h1>
     </header>
-      
-    <nav>
-        <p>Charactername</p>
-      <ul>
-        <button onclick="ReplaceView('mainPane', 'Home')">Home</button></br>
-        <button onclick="ReplaceView('mainPane', 'Profile')">Profile</button></br>
-        <button onclick="ReplaceView('mainPane', 'Friends')">Friends</button></br>
-        <button onclick="ReplaceView('mainPane', 'Logout')">Logout</button>
+      <nav>
+      <ul id="nav_menu">
       </ul>
     </nav>
     
-    <article id="mainPane"><!-- src="home.html">-->
-            <h1 id="header">HEJ!</h1>
-            <p>Här ska vi skriva ett supermegabra notes program i Electron!</p></br>
-            <p>Or maybe change this to a fortnite tracker depending on what you can access with JS(tracking, twitch and filesystem stuff)</p>
-    </article>
+    <section id="MainWindow"></section>
     
     <footer>Copyright &copy; hedback.com</footer>
     
     </div>
-
+    <!-- Här kan vi ladda in grejer efter att DOM har byggts! -->
+    <script type="text/javascript" src="../db/db.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
     </body>
 </html>
