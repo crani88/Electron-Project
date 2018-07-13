@@ -5,12 +5,16 @@
   "main": "main.js",
   "dependencies": {
     "electron": "^2.0.4",
-    "pixi.js": "^4.8.1"
+    "pixi.js": "^4.8.1",
+    "sqlite3": "https://github.com/mapbox/node-sqlite3/tarball/master"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "electron-rebuild": "^1.8.1"
+  },
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": "electron-rebuild -f -w electron"
   },
   "author": "Andreas Hedbäck",
   "license": "ISC",
@@ -18,6 +22,7 @@
     "*.js",
     "build",
     "app",
+    "db",
     "node_modules"
   ]
 }
