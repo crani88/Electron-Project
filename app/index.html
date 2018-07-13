@@ -2,16 +2,40 @@
   <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css"
   </head>
-  <script src="node_modules\pixi.js\dist\pixi.min.js"></script>
   <body>
-    <script type="text/javascript">
-      let type = "WebGL"
-      if(!PIXI.utils.isWebGLSupported()){
-        type = "canvas"
-      }
-      PIXI.utils.sayHello(type);
-    </script>
-  </body>
+    <!-- <script type="text/javascript" src="js/Game.js"></script> -->
+    
+    <div class="container">
+    
+    <header>
+       <h1>Medieval!</h1>
+    </header>
+      
+    <nav>
+        <p>Charactername</p>
+      <ul>
+        <button onclick="ReplaceView('mainPane', 'Home')">Home</button></br>
+        <button onclick="ReplaceView('mainPane', 'Profile')">Profile</button></br>
+        <button onclick="ReplaceView('mainPane', 'Friends')">Friends</button></br>
+        <button onclick="ReplaceView('mainPane', 'Logout')">Logout</button>
+      </ul>
+    </nav>
+    
+    <article id="mainPane" src="home.html">
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+            Your browser does not support the HTML5 canvas tag.
+            </canvas>
+            <h1 id="header">HEJ!</h1>
+            <p>Här ska vi skriva ett supermegabra notes program i Electron!</p></br>
+            <p>Or maybe change this to a fortnite tracker depending on what you can access with JS(tracking, twitch and filesystem stuff)</p>
+            <script>new Game()</script>
+    </article>
+    
+    <footer>Copyright &copy; hedback.com</footer>
+    
+    </div>
+
+    </body>
 </html>
