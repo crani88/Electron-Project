@@ -1,0 +1,2 @@
+Add ticket system, can enter tournaments for free if a "qualifier" is won.
+Otherwise entry to tournaments and other things will require premium.
