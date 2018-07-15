@@ -21,10 +21,13 @@ create_main_menu = function() {
         child.id = key;
         link.appendChild(child);
     });
+    mainWindow.innerHTML = fs.readFileSync('./app/html/login.html');
 
+    /*
     let myNotification = new Notification('Superspelet', {
         body: 'Started new session'
       })
+    */
 }
 
 changeContent = function(view) {
@@ -41,6 +44,7 @@ changeContent = function(view) {
             break;
         case "logout":
             mainWindow.innerHTML = fs.readFileSync('./app/html/logout.html');
+            //Electron.app.quit()
             break;
         default:
             mainWindow.innerHTML = fs.readFileSync('./app/html/welcome.html');
